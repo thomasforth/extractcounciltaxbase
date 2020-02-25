@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\2010_Local_Authority_level_data.xls" />
+    <None Remove="Assets\2011_Local_Authority_level_data.xls" />
+    <None Remove="Assets\Council_Taxbase_local_authority_level_data_2013.xlsx" />
+    <None Remove="Assets\CTB_Form_October_2015-_drop_down_-_revised_Feb_2016.xlsx" />
+    <None Remove="Assets\LA_Drop_down_2016_revised_Jan.xlsx" />
+    <None Remove="Assets\LA_Drop_down_2017_web__rev_.xlsx" />
+    <None Remove="Assets\LA_Drop_down_2018_rev.xlsx" />
+    <None Remove="Assets\Local_Authorities_Council_Taxbase_2019_Drop_down.xlsx" />
+    <None Remove="Assets\Revised_2012_Local_Authority_level_data.xls" />
+    <None Remove="Assets\Revised_CTB_Form_October_2014-_drop_down_sv.xlsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\2010_Local_Authority_level_data.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\2011_Local_Authority_level_data.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Council_Taxbase_local_authority_level_data_2013.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\CTB_Form_October_2015-_drop_down_-_revised_Feb_2016.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LA_Drop_down_2016_revised_Jan.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LA_Drop_down_2017_web__rev_.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\LA_Drop_down_2018_rev.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Local_Authorities_Council_Taxbase_2019_Drop_down.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Revised_2012_Local_Authority_level_data.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Revised_CTB_Form_October_2014-_drop_down_sv.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.0" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+  </ItemGroup>
+
+</Project>
